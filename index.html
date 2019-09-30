@@ -29,8 +29,8 @@ https://www.tooplate.com/view/2117-infinite-loop
         if (status == google.maps.GeocoderStatus.OK) {
           console.log(results)
         if (results[1]) {
-          var city = (results[0].address_components[3].long_name);
-          alert("Your address is: " + results[0].formatted_address)
+          var city = (results[0].address_components[2].long_name);
+          console.log("Your address is: " + results[0].formatted_address);
           console.log(city)
           if (city == "San Francisco"){
             $("#info").html('<a href="https://www.sfpublicworks.org/graffiti" id="info" class="tm-intro-text tm-btn-primary">Report It</a>');          }
